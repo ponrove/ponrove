@@ -18,7 +18,7 @@ jobs:
         run: go mod vendor
       - name: Build
         id: build
-        run: go build -v -a -installsuffix cgo -o runtime_binary ./cmd/server
+        run: go build -v -a -installsuffix cgo -o runtime_binary ./cmd
       - name: Test with the Go CLI
         if: always()
         id: test
