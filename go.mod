@@ -3,8 +3,11 @@ module github.com/ponrove/ponrove
 go 1.24.3
 
 require (
+	github.com/danielgtaylor/huma/v2 v2.32.0
 	github.com/go-chi/chi/v5 v5.2.1
+	github.com/ponrove/configura v1.0.0-rc.4
 	github.com/ponrove/ponrove-backend v0.0.0-20250610132501-fc2c44976fb3
+	github.com/ponrove/ponrove-frontend v0.0.0-20250610131321-469ed40a5c54
 	github.com/ponrove/ponrunner v1.0.0-rc.7
 	github.com/rs/zerolog v1.34.0
 )
@@ -12,7 +15,6 @@ require (
 require (
 	github.com/bluele/gcache v0.0.2 // indirect
 	github.com/cenkalti/backoff/v5 v5.0.2 // indirect
-	github.com/danielgtaylor/huma/v2 v2.32.0 // indirect
 	github.com/felixge/httpsnoop v1.0.4 // indirect
 	github.com/go-logr/logr v1.4.3 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
@@ -23,7 +25,6 @@ require (
 	github.com/open-feature/go-sdk v1.15.0 // indirect
 	github.com/open-feature/go-sdk-contrib/providers/go-feature-flag v0.2.5 // indirect
 	github.com/open-feature/go-sdk-contrib/providers/ofrep v0.1.5 // indirect
-	github.com/ponrove/configura v1.0.0-rc.4 // indirect
 	github.com/veqryn/slog-context v0.8.0 // indirect
 	go.opentelemetry.io/auto/sdk v1.1.0 // indirect
 	go.opentelemetry.io/contrib/bridges/otelslog v0.11.0 // indirect
