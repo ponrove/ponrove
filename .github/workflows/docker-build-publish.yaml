@@ -25,6 +25,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@85e6279cec87321a52edac9c87bce653a07cf6c2
+      - name: Setup Go
+        uses: actions/setup-go@d35c59abb061a4a6fb18e82ac0862c26744d6ab5
+        with:
+          go-version-file: go.mod
       - name: Prepare
         run: |
           platform=${{ matrix.platform }}
@@ -68,7 +72,7 @@ jobs:
           platforms: ${{ matrix.platform }}
           labels: ${{ steps.meta.outputs.labels }}
           tags: ${{ env.REGISTRY_IMAGE }}
-          args: |
+          build-args: |
             FRONTEND_VERSION=$(go list -m -f '{{ .Version }}' github.com/ponrove/ponrove-frontend)
           outputs: type=image,push-by-digest=true,name-canonical=true,push=true
 
