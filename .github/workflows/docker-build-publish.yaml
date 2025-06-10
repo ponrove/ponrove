@@ -68,6 +68,8 @@ jobs:
           platforms: ${{ matrix.platform }}
           labels: ${{ steps.meta.outputs.labels }}
           tags: ${{ env.REGISTRY_IMAGE }}
+          args: |
+            FRONTEND_VERSION=$(go list -m -f '{{ .Version }}' github.com/ponrove/ponrove-frontend)
           outputs: type=image,push-by-digest=true,name-canonical=true,push=true
 
       - name: Export digest
