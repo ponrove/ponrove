@@ -4,8 +4,8 @@ go 1.24.3
 
 require (
 	github.com/go-chi/chi/v5 v5.2.1
-	github.com/ponrove/ponrove-backend v0.0.0-20250605103652-b8238a40d992
-	github.com/ponrove/ponrunner v1.0.0-rc.6
+	github.com/ponrove/ponrove-backend v0.0.0-20250610132501-fc2c44976fb3
+	github.com/ponrove/ponrunner v1.0.0-rc.7
 	github.com/rs/zerolog v1.34.0
 )
 
@@ -23,7 +23,7 @@ require (
 	github.com/open-feature/go-sdk v1.15.0 // indirect
 	github.com/open-feature/go-sdk-contrib/providers/go-feature-flag v0.2.5 // indirect
 	github.com/open-feature/go-sdk-contrib/providers/ofrep v0.1.5 // indirect
-	github.com/ponrove/configura v1.0.0-rc.3 // indirect
+	github.com/ponrove/configura v1.0.0-rc.4 // indirect
 	github.com/veqryn/slog-context v0.8.0 // indirect
 	go.opentelemetry.io/auto/sdk v1.1.0 // indirect
 	go.opentelemetry.io/contrib/bridges/otelslog v0.11.0 // indirect
