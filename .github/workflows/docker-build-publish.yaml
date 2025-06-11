@@ -65,8 +65,7 @@ jobs:
 
       - name: Get frontend version
         id: frontend_version
-        run: |
-          go list -m -f '{{ .Version }}' github.com/ponrove/ponrove-frontend
+        run: echo "version=$(go list -m -f '{{ .Version }}' github.com/ponrove/ponrove-frontend)" >> $GITHUB_OUTPUT
 
       - name: Build and push by digest
         id: build
@@ -78,7 +77,7 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           tags: ${{ env.REGISTRY_IMAGE }}
           build-args: |
-            FRONTEND_VERSION="${{ steps.frontend_version.outputs.stdout }}"
+            FRONTEND_VERSION=${{ steps.frontend_version.outputs.version }}
           outputs: type=image,push-by-digest=true,name-canonical=true,push=true
 
       - name: Export digest
