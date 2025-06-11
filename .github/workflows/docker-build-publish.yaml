@@ -80,7 +80,7 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           tags: ${{ env.REGISTRY_IMAGE }}
           build-args: |
-            FRONTEND_VERSION=${{ env.FRONTEND_VERSION }}
+            FRONTEND_VERSION=$FRONTEND_VERSION
           outputs: type=image,push-by-digest=true,name-canonical=true,push=true
 
       - name: Export digest
