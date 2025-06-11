@@ -6,7 +6,7 @@ require (
 	github.com/danielgtaylor/huma/v2 v2.32.0
 	github.com/go-chi/chi/v5 v5.2.1
 	github.com/ponrove/configura v1.0.0-rc.4
-	github.com/ponrove/ponrove-backend v1.0.0-pre.9
+	github.com/ponrove/ponrove-backend v1.0.0-pre.12
 	github.com/ponrove/ponrove-frontend v1.0.0-rc.2
 	github.com/ponrove/ponrunner v1.0.0-rc.7
 	github.com/rs/zerolog v1.34.0
