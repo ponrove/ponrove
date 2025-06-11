@@ -1,4 +1,4 @@
-ARG FRONTEND_VERSION=latest
+ARG FRONTEND_VERSION=edge
 FROM rg.fr-par.scw.cloud/ponrove/ponrove-frontend:${FRONTEND_VERSION} AS webclient-build
 
 FROM golang:1.24.3 AS builder
